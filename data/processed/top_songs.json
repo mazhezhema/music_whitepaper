@@ -1,0 +1,72 @@
+[
+  {
+    "rank": 1,
+    "title": "漂洋过海来看你",
+    "artist": "李宗盛",
+    "tags": "怀旧/深情",
+    "playback_rate": 2.9
+  },
+  {
+    "rank": 2,
+    "title": "想你的夜",
+    "artist": "关喆",
+    "tags": "emo/独唱",
+    "playback_rate": 2.7
+  },
+  {
+    "rank": 3,
+    "title": "那女孩对我说",
+    "artist": "黄义达",
+    "tags": "伤感情绪",
+    "playback_rate": 2.6
+  },
+  {
+    "rank": 4,
+    "title": "后来",
+    "artist": "刘若英",
+    "tags": "青春回忆",
+    "playback_rate": 2.4
+  },
+  {
+    "rank": 5,
+    "title": "演员",
+    "artist": "薛之谦",
+    "tags": "叙事/emo",
+    "playback_rate": 2.3
+  },
+  {
+    "rank": 6,
+    "title": "你就不要想起我",
+    "artist": "田馥甄",
+    "tags": "emo女声",
+    "playback_rate": 2.2
+  },
+  {
+    "rank": 7,
+    "title": "一路向北",
+    "artist": "周杰伦",
+    "tags": "孤独/叛逆",
+    "playback_rate": 2.1
+  },
+  {
+    "rank": 8,
+    "title": "平凡之路",
+    "artist": "朴树",
+    "tags": "励志/旅行",
+    "playback_rate": 2.0
+  },
+  {
+    "rank": 9,
+    "title": "起风了",
+    "artist": "买辣椒也用券",
+    "tags": "文艺独立",
+    "playback_rate": 1.9
+  },
+  {
+    "rank": 10,
+    "title": "说好的幸福呢",
+    "artist": "周杰伦",
+    "tags": "回忆/伤感",
+    "playback_rate": 1.8
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "rank": 1,
+    "title": "DJ 舞曲：38度6",
+    "tags": "电音、节奏强",
+    "playback_rate": "4.5%",
+    "usage_scenario": "夜店剪辑/健身热曲",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 2,
+    "title": "DJ 爱如火",
+    "tags": "情感电音",
+    "playback_rate": "4.1%",
+    "usage_scenario": "短视频情绪类配乐",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 3,
+    "title": "DJ 天使的翅膀",
+    "tags": "经典改编",
+    "playback_rate": "3.8%",
+    "usage_scenario": "卡点视频/文艺MV",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 4,
+    "title": "DJ 红马",
+    "tags": "复古、节奏感",
+    "playback_rate": "3.6%",
+    "usage_scenario": "跳舞挑战/B站搬运",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 5,
+    "title": "DJ 不装饰你的梦",
+    "tags": "怀旧翻唱",
+    "playback_rate": "3.4%",
+    "usage_scenario": "中老年热爱/广场舞变奏",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 6,
+    "title": "DJ 下辈子不一定还能遇见你",
+    "tags": "热门翻唱",
+    "playback_rate": "3.2%",
+    "usage_scenario": "抖音片段/故事剪辑",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 7,
+    "title": "DJ 咖喱咖喱",
+    "tags": "舞曲、解压",
+    "playback_rate": "2.9%",
+    "usage_scenario": "KTV活跃现场",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 8,
+    "title": "DJ 云烟成雨",
+    "tags": "情感叙事",
+    "playback_rate": "2.7%",
+    "usage_scenario": "夜景配乐",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 9,
+    "title": "DJ 世间美好与你环环相扣",
+    "tags": "情侣对唱",
+    "playback_rate": "2.5%",
+    "usage_scenario": "情侣BGM/旅拍",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 10,
+    "title": "DJ 独角戏",
+    "tags": "emo律动",
+    "playback_rate": "2.3%",
+    "usage_scenario": "剧情向短视频剪辑",
+    "chart_type": "hot_chart"
+  },
+  {
+    "rank": 1,
+    "title": "DJ版-可不可以",
+    "tags": "DJ/情感混音",
+    "heat_status": "热播上升",
+    "usage_scenario": "抖音车载剪辑带火混音版，情绪渲染力强",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 2,
+    "title": "DJ-远在北方孤独的鬼",
+    "tags": "DJ/民谣改编",
+    "heat_status": "持续增长",
+    "usage_scenario": "原曲情感浓烈，混音更具节奏感",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 3,
+    "title": "DJ-写给黄淮",
+    "tags": "DJ/独立流行",
+    "heat_status": "高播放",
+    "usage_scenario": "地域表达+爆款旋律，DJ版传播广",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 4,
+    "title": "DJ-如果可以",
+    "tags": "DJ/经典翻唱",
+    "heat_status": "中高热度",
+    "usage_scenario": "翻唱带火原曲，多版本助推传播",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 5,
+    "title": "DJ-你的答案",
+    "tags": "励志/DJ混音",
+    "heat_status": "车载流行",
+    "usage_scenario": "节奏适中，适合开车场景反复播放",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 6,
+    "title": "DJ-后来",
+    "tags": "怀旧情歌/DJ",
+    "heat_status": "稳定高热",
+    "usage_scenario": "混音版保留原曲情绪，增加节奏动感",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 7,
+    "title": "DJ-玫瑰少年",
+    "tags": "女声独唱/DJ",
+    "heat_status": "上升趋势",
+    "usage_scenario": "适合短视频背景，节奏轻快易混剪",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 8,
+    "title": "DJ-告白气球",
+    "tags": "表白甜歌/DJ",
+    "heat_status": "热度稳定",
+    "usage_scenario": "节奏适中，男女对唱场景适用",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 9,
+    "title": "DJ-像鱼",
+    "tags": "抒情电子/DJ",
+    "heat_status": "情绪浓度高",
+    "usage_scenario": "夜车氛围拉满，短视频翻唱常客",
+    "chart_type": "trending_chart"
+  },
+  {
+    "rank": 10,
+    "title": "DJ-不该",
+    "tags": "情感共鸣/DJ",
+    "heat_status": "潜力上升",
+    "usage_scenario": "节奏起伏，适合情绪剪辑表达",
+    "chart_type": "trending_chart"
+  }
+]

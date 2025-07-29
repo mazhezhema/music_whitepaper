@@ -1,0 +1,31 @@
+{
+  "peak_hours": "19:00 - 22:30",
+  "secondary_peak": "12:30 - 14:00",
+  "low_hours": "03:00 - 08:00",
+  "device_usage": [
+    {
+      "type": "商业KTV",
+      "active_hours": "20:00 - 01:00",
+      "avg_duration": "1h45m",
+      "behavior": "社交高峰，酒局K歌、对唱"
+    },
+    {
+      "type": "家庭音响系统",
+      "active_hours": "17:00 - 21:00",
+      "avg_duration": "1h15m",
+      "behavior": "家庭聚会、亲子互动"
+    },
+    {
+      "type": "拉杆便携音响",
+      "active_hours": "16:00 - 22:00",
+      "avg_duration": "58m",
+      "behavior": "户外广场活动，嗨歌为主"
+    },
+    {
+      "type": "共享K歌亭",
+      "active_hours": "12:00 - 22:00",
+      "avg_duration": "42m",
+      "behavior": "单人emo、宣泄独唱"
+    }
+  ]
+}

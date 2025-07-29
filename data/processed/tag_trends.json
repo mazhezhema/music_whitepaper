@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "emo",
+    "frequency": 9823,
+    "growth_rate": "+24%",
+    "trend_analysis": "失恋翻唱、夜景口播爆发点"
+  },
+  {
+    "tag": "对唱",
+    "frequency": 8129,
+    "growth_rate": "+32%",
+    "trend_analysis": "情侣唱将短视频、节日热点引爆"
+  },
+  {
+    "tag": "演唱会",
+    "frequency": 6412,
+    "growth_rate": "+27%",
+    "trend_analysis": "线下演唱会带动线上点播"
+  },
+  {
+    "tag": "港风",
+    "frequency": 3921,
+    "growth_rate": "+18%",
+    "trend_analysis": "港乐回潮，年轻人复古热潮"
+  },
+  {
+    "tag": "翻红",
+    "frequency": 5791,
+    "growth_rate": "+19%",
+    "trend_analysis": "懒人包+怀旧挑战组合爆款机制"
+  }
+]

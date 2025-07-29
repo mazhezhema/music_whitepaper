@@ -1,0 +1,53 @@
+[
+  {
+    "city_type": "一线城市",
+    "preferred_tags": [
+      "怀旧",
+      "演唱会",
+      "独唱"
+    ],
+    "typical_songs": [
+      "情非得已",
+      "她来听我的演唱会"
+    ]
+  },
+  {
+    "city_type": "新一线城市",
+    "preferred_tags": [
+      "emo",
+      "翻唱",
+      "表白"
+    ],
+    "typical_songs": [
+      "想你的夜",
+      "借口",
+      "慢冷"
+    ]
+  },
+  {
+    "city_type": "二线城市",
+    "preferred_tags": [
+      "对唱",
+      "嗨歌",
+      "粤语"
+    ],
+    "typical_songs": [
+      "小酒窝",
+      "屋顶",
+      "友情岁月"
+    ]
+  },
+  {
+    "city_type": "三线城市",
+    "preferred_tags": [
+      "本地",
+      "喊麦",
+      "复古"
+    ],
+    "typical_songs": [
+      "老男孩",
+      "突然的自我",
+      "闯码头"
+    ]
+  }
+]

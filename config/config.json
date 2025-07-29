@@ -1,0 +1,61 @@
+{
+  "project_info": {
+    "name": "音乐行业白皮书项目",
+    "version": "1.0.0",
+    "description": "为硬件厂商提供音乐行业市场洞察和商业建议",
+    "author": "雷石互联网研究院",
+    "contact": "mazhe@thunder.com.cn"
+  },
+  "data_sources": {
+    "billboard_report": "data/raw/billboard_report_2025q2.md",
+    "analysis_output": "analysis/comprehensive_analysis.json"
+  },
+  "output_paths": {
+    "reports": {
+      "whitepaper": "reports/music_whitepaper_2025q2.md",
+      "executive_summary": "reports/executive_summary.md",
+      "marketing_copy": "reports/marketing_copy.md",
+      "technical_specs": "reports/technical_specs.md"
+    },
+    "visualization": {
+      "charts_dir": "visualization/charts",
+      "dashboard": "visualization/charts/dashboard.html"
+    },
+    "docs": {
+      "project_summary": "docs/project_summary.md"
+    }
+  },
+  "analysis_settings": {
+    "chart_dpi": 300,
+    "chart_format": "png",
+    "max_top_songs": 10,
+    "max_tag_trends": 10
+  },
+  "business_recommendations": {
+    "target_audiences": [
+      "音响厂商",
+      "KTV设备商",
+      "家庭娱乐设备制造商",
+      "内容平台",
+      "数据服务商"
+    ],
+    "cooperation_models": [
+      "产品定制",
+      "内容授权",
+      "数据服务",
+      "智能推荐",
+      "营销活动"
+    ]
+  },
+  "visualization_settings": {
+    "chart_colors": {
+      "primary": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"],
+      "secondary": ["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3"]
+    },
+    "font_settings": {
+      "chinese_fonts": ["SimHei", "Arial Unicode MS", "DejaVu Sans"],
+      "default_font_size": 12,
+      "title_font_size": 16
+    }
+  }
+} 
