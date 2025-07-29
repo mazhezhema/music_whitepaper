@@ -1,0 +1,50 @@
+name: Auto Generate Whitepapers
+
+on:
+  schedule:
+    # 每周一上午9点运行
+    - cron: '0 9 * * 1'
+    # 每月1号上午10点运行
+    - cron: '0 10 1 * *'
+    # 每季度第一天上午11点运行
+    - cron: '0 11 1 1,4,7,10 *'
+  workflow_dispatch:
+    inputs:
+      period:
+        description: '生成周期'
+        required: true
+        default: 'weekly'
+        type: choice
+        options:
+        - weekly
+        - monthly
+        - quarterly
+
+jobs:
+  generate-whitepaper:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Generate whitepaper
+      run: |
+        python scheduler.py ${{ github.event.inputs.period || 'weekly' }}
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generated whitepaper" && git push) 
