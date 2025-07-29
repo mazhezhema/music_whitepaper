@@ -7,20 +7,22 @@
 
 import json
 from datetime import datetime
-from typing import Dict, List, Any
+from typing import Any, Dict, List
+
 from jinja2 import Template
+
 
 class ContentGenerator:
     """文案生成器"""
-    
+
     def __init__(self):
         self.templates = {}
         self.load_templates()
-    
+
     def load_templates(self):
         """加载文案模板"""
         self.templates = {
-            'executive_summary': """
+            "executive_summary": """
 # 音乐行业白皮书：2025年Q2市场洞察报告
 
 ## 执行摘要
@@ -45,8 +47,7 @@ class ContentGenerator:
 
 ---
 """,
-            
-            'market_analysis': """
+            "market_analysis": """
 ## 市场深度分析
 
 ### 用户画像洞察
@@ -66,8 +67,7 @@ class ContentGenerator:
 
 ---
 """,
-            
-            'business_recommendations': """
+            "business_recommendations": """
 ## 硬件厂商合作建议
 
 ### 🎯 产品定制方向
@@ -111,8 +111,7 @@ class ContentGenerator:
 
 ---
 """,
-            
-            'trend_predictions': """
+            "trend_predictions": """
 ## 趋势预测与展望
 
 ### 短期趋势 (Q3-Q4 2025)
@@ -131,8 +130,7 @@ class ContentGenerator:
 
 ---
 """,
-            
-            'marketing_copy': """
+            "marketing_copy": """
 ## 营销文案模板
 
 ### 产品宣传文案
@@ -159,8 +157,7 @@ class ContentGenerator:
 
 ---
 """,
-            
-            'technical_specs': """
+            "technical_specs": """
 ## 技术规格与实施细节
 
 ### API接口规范
@@ -190,42 +187,44 @@ class ContentGenerator:
 - 请求频率限制: 1000次/小时
 
 ---
-"""
+""",
         }
-    
+
     def generate_executive_summary(self, analysis_data: Dict) -> str:
         """生成执行摘要"""
-        template = Template(self.templates['executive_summary'])
-        return template.render(**analysis_data['executive_summary'])
-    
+        template = Template(self.templates["executive_summary"])
+        return template.render(**analysis_data["executive_summary"])
+
     def generate_market_analysis(self, analysis_data: Dict) -> str:
         """生成市场分析"""
-        template = Template(self.templates['market_analysis'])
-        return template.render(**analysis_data['detailed_analysis'])
-    
+        template = Template(self.templates["market_analysis"])
+        return template.render(**analysis_data["detailed_analysis"])
+
     def generate_business_recommendations(self, analysis_data: Dict) -> str:
         """生成商业建议"""
-        template = Template(self.templates['business_recommendations'])
-        return template.render(business_recommendations=analysis_data['business_recommendations'])
-    
+        template = Template(self.templates["business_recommendations"])
+        return template.render(
+            business_recommendations=analysis_data["business_recommendations"]
+        )
+
     def generate_trend_predictions(self, analysis_data: Dict) -> str:
         """生成趋势预测"""
-        template = Template(self.templates['trend_predictions'])
+        template = Template(self.templates["trend_predictions"])
         return template.render(
-            predictions=analysis_data['predictions'],
-            tag_trends=analysis_data['detailed_analysis']['tag_trends']
+            predictions=analysis_data["predictions"],
+            tag_trends=analysis_data["detailed_analysis"]["tag_trends"],
         )
-    
+
     def generate_marketing_copy(self) -> str:
         """生成营销文案"""
-        template = Template(self.templates['marketing_copy'])
+        template = Template(self.templates["marketing_copy"])
         return template.render()
-    
+
     def generate_technical_specs(self) -> str:
         """生成技术规格"""
-        template = Template(self.templates['technical_specs'])
+        template = Template(self.templates["technical_specs"])
         return template.render()
-    
+
     def generate_complete_whitepaper(self, analysis_data: Dict) -> str:
         """生成完整白皮书"""
         sections = [
@@ -234,9 +233,9 @@ class ContentGenerator:
             self.generate_business_recommendations(analysis_data),
             self.generate_trend_predictions(analysis_data),
             self.generate_marketing_copy(),
-            self.generate_technical_specs()
+            self.generate_technical_specs(),
         ]
-        
+
         # 添加页脚
         footer = f"""
 ---
@@ -257,36 +256,37 @@ class ContentGenerator:
 
 *本报告由雷石互联网研究院出品，基于真实用户数据生成，为硬件厂商提供专业的市场洞察和商业建议。*
 """
-        
-        return '\n\n'.join(sections) + footer
-    
+
+        return "\n\n".join(sections) + footer
+
     def generate_custom_report(self, analysis_data: Dict, report_type: str) -> str:
         """生成定制化报告"""
-        if report_type == 'executive':
+        if report_type == "executive":
             return self.generate_executive_summary(analysis_data)
-        elif report_type == 'technical':
+        elif report_type == "technical":
             return self.generate_technical_specs()
-        elif report_type == 'marketing':
+        elif report_type == "marketing":
             return self.generate_marketing_copy()
         else:
             return self.generate_complete_whitepaper(analysis_data)
-    
+
     def save_report(self, content: str, output_path: str):
         """保存报告"""
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             f.write(content)
         print(f"报告已保存到: {output_path}")
+
 
 if __name__ == "__main__":
     # 示例用法
     generator = ContentGenerator()
-    
+
     # 加载分析数据
-    with open('analysis/comprehensive_analysis.json', 'r', encoding='utf-8') as f:
+    with open("analysis/comprehensive_analysis.json", "r", encoding="utf-8") as f:
         analysis_data = json.load(f)
-    
+
     # 生成完整白皮书
     whitepaper = generator.generate_complete_whitepaper(analysis_data)
-    generator.save_report(whitepaper, 'reports/music_whitepaper_2025q2.md')
-    
-    print("白皮书生成完成！") 
+    generator.save_report(whitepaper, "reports/music_whitepaper_2025q2.md")
+
+    print("白皮书生成完成！")
