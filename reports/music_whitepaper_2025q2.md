@@ -259,9 +259,7 @@
 **报告版本**: v3.2 (含省份数据版)  
 
 **联系方式**:  
-- 邮箱: mazhe@thunder.com.cn  
-- 网址: www.leishi.com  
-- 服务: 雷石服务有限公司  
+- 邮箱: openktv@thunder.com.cn  
 
 ---
 
