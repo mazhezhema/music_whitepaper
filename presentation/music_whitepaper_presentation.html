@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>音乐服务白皮书：2025年Q2市场洞察与雷石供给侧改革</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chartjs-plugin-datalabels.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -185,18 +186,18 @@
         th {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            padding: 25px 20px;
+            padding: 20px 15px;
             font-weight: bold;
             text-align: center;
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         td {
-            padding: 25px 20px;
+            padding: 18px 15px;
             text-align: center;
             border-bottom: 1px solid #eee;
-            font-size: 1.2em;
-            line-height: 1.5;
+            font-size: 1.1em;
+            line-height: 1.4;
         }
 
         tr:nth-child(even) {
@@ -234,13 +235,13 @@
         .highlight-box {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
-            padding: 35px;
-            border-radius: 20px;
+            padding: 25px;
+            border-radius: 15px;
             margin: 0;
-            font-size: 1.5em;
-            line-height: 1.6;
+            font-size: 1.3em;
+            line-height: 1.5;
             flex-shrink: 0;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         .highlight-box h3 {
@@ -251,14 +252,14 @@
 
         .insight-box {
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            padding: 35px;
-            border-radius: 20px;
+            padding: 25px;
+            border-radius: 15px;
             margin: 0;
-            border-left: 6px solid #667eea;
-            font-size: 1.5em;
-            line-height: 1.6;
+            border-left: 5px solid #667eea;
+            font-size: 1.3em;
+            line-height: 1.5;
             flex-shrink: 0;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         .insight-box h4 {
@@ -297,9 +298,9 @@
 
         .info-card {
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -312,22 +313,22 @@
         }
 
         .info-card h3 {
-            font-size: 1.8em;
+            font-size: 1.5em;
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-weight: bold;
         }
 
         .info-card p {
-            font-size: 1.3em;
-            line-height: 1.6;
+            font-size: 1.1em;
+            line-height: 1.5;
             color: #34495e;
         }
 
         .info-card ul {
-            font-size: 1.2em;
-            line-height: 1.7;
-            margin-left: 20px;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-left: 15px;
             color: #555;
         }
 
@@ -338,7 +339,7 @@
         .quad-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            gap: 20px;
             height: 100%;
             align-content: center;
         }
@@ -1379,13 +1380,13 @@
             </div>
 
             <div class="content-main">
-                <div class="highlight-box fade-in" style="text-align: center; margin-bottom: 40px;">
+                <div class="highlight-box fade-in" style="text-align: center; margin-bottom: 30px;">
                     <h2>🎵 雷石互联网研究院</h2>
-                    <div style="font-size: 1.5em; margin: 30px 0;">
+                    <div style="font-size: 1.3em; margin: 20px 0;">
                         <p><strong>📧 联系邮箱：</strong></p>
-                        <p style="font-size: 1.6em; color: #fff; margin: 20px 0; font-weight: bold;">openktv@thunder.com.cn</p>
+                        <p style="font-size: 1.4em; color: #fff; margin: 15px 0; font-weight: bold; word-break: break-all;">openktv@thunder.com.cn</p>
                     </div>
-                    <p>基于全平台真实用户数据生成，为硬件厂商提供专业解决方案</p>
+                    <p style="font-size: 1.2em;">基于全平台真实用户数据生成，为硬件厂商提供专业解决方案</p>
                 </div>
 
                 <div class="quad-grid">
@@ -1500,6 +1501,16 @@
                                         return context.label + ': ' + context.parsed + '%';
                                     }
                                 }
+                            },
+                            datalabels: {
+                                color: '#fff',
+                                font: {
+                                    weight: 'bold',
+                                    size: 14
+                                },
+                                formatter: function(value, context) {
+                                    return value + '%';
+                                }
                             }
                         }
                     }
@@ -1536,6 +1547,16 @@
                                         return context.label + ': ' + context.parsed + '%';
                                     }
                                 }
+                            },
+                            datalabels: {
+                                color: '#fff',
+                                font: {
+                                    weight: 'bold',
+                                    size: 14
+                                },
+                                formatter: function(value, context) {
+                                    return value + '%';
+                                }
                             }
                         }
                     }
@@ -1568,6 +1589,16 @@
                                     label: function(context) {
                                         return context.label + ': ' + context.parsed + '%';
                                     }
+                                }
+                            },
+                            datalabels: {
+                                color: '#fff',
+                                font: {
+                                    weight: 'bold',
+                                    size: 14
+                                },
+                                formatter: function(value, context) {
+                                    return value + '%';
                                 }
                             }
                         }
